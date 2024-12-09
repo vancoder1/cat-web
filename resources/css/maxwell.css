@@ -8,11 +8,12 @@ body {
 }
 
 /* MAIN */
-.biography {
+main {
     margin-top: 4rem;
     margin-bottom: 4rem;
     margin-left: 260px;
 }
+
 /* SIDEBAR */
 .sidebar {
     position: fixed;
