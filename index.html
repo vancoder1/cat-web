@@ -28,13 +28,27 @@
         </nav>
 
         <!-- SIDEBAR -->
-        <nav class="sidebar d-md-block collapse bg-dark text-white">
+        <nav class="sidebar d-md-block px-2 collapse bg-dark text-white">
             <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Home</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">About Cats</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Cat Breeds</a>
-                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Contact</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Mona</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Tenley</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Maxwell</a>
+                <a href="#" class="list-group-item list-group-item-action bg-dark text-white">Rocky</a>
             </div>
+            <form>
+                <div class="mb-3">
+                    <label for="inputName" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                </div>
+                <select class="mb-3 form-select" aria-label="Default select example">
+                    <option value="Mona" selected>Mona</option>
+                    <option value="Tenley">Tenley</option>
+                    <option value="Maxwell">Maxwell</option>
+                    <option value="Rocky">Rocky</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
         </nav>
     </header>
 
@@ -50,6 +64,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Mona and Tenley Fighting</h5>
                             <div class="mb-2">
+                                <span class="badge bg-danger">New</span>
                                 <span class="badge bg-primary">Short</span>
                                 <span class="badge bg-primary">Mona</span>
                                 <span class="badge bg-primary">Tenley</span>
@@ -63,6 +78,7 @@
                                 with each of them
                                 separately and give them lots of cuddles – that does the trick!
                             </p>
+
                         </div>
                     </div>
                 </div>
@@ -148,6 +164,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </main>
 
     <!-- FOOTER -->
