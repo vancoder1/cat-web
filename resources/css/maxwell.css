@@ -1,0 +1,30 @@
+body {
+    background-color: #F2E5BF;
+}
+
+/* HEADER */
+.header {
+    height: 4rem;
+}
+
+/* MAIN */
+.biography {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    margin-left: 260px;
+}
+/* SIDEBAR */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 4rem 0 4rem 0;
+    width: 260px;
+    z-index: 600;
+}
+
+/* FOOTER */
+.footer {
+    height: 4rem;
+}
