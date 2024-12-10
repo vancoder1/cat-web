@@ -1,0 +1,9 @@
+.sidebar {
+    overflow-y: scroll;
+    padding-top: 0 2rem 0 2rem;
+}
+
+.card {
+    background-color: #8b4513;
+    color: white;
+}
