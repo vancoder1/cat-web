@@ -14,6 +14,18 @@ main {
     margin-left: 260px;
 }
 
+/* Set width and height for item container */
+.carousel-item {
+    width: 25vw;
+    height: 60vh;
+}
+
+/* fit images fully within carousel items */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
 /* SIDEBAR */
 .sidebar {
     position: fixed;
