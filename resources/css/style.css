@@ -4,26 +4,36 @@
     --header-footer-height: 4rem;
     --hover-background: #636b72;
     --active-background: #3d4349;
+    --text-primary: #333;
+    --text-light: #f8f9fa;
 }
 
-body {
-    background-color: var(--background-color);
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+/* Reset and Base Styles */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* HEADER */
+body {
+    background-color: var(--background-color);
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+}
+
+/* Layout Sections */
 .header {
     height: var(--header-footer-height);
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-/* SIDEBAR */
 .sidebar {
     position: fixed;
     top: 0;
@@ -31,40 +41,24 @@ body {
     left: 0;
     width: var(--sidebar-width);
     padding: var(--header-footer-height) 0;
-    z-index: 600;
+    z-index: -1;
+    overflow-y: auto;
+    transition: transform 0.3s ease;
 }
 
-/* MAIN */
 main {
     margin-top: var(--header-footer-height);
     margin-bottom: var(--header-footer-height);
     margin-left: var(--sidebar-width);
+    padding: 0.5rem;
 }
 
-/* List Group Items */
-.list-group-item {
-    transition: all 0.3s ease;
-}
-
-.list-group-item:hover {
-    background-color: var(--hover-background) !important;
-    color: #ffffff !important;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-.list-group-item:active,
-.list-group-item.active {
-    background-color: var(--active-background) !important;
-    color: #ffffff !important;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-/* Footer */
 .footer {
     height: var(--header-footer-height);
     position: fixed;
     bottom: 0;
     width: 100%;
+    z-index: 1000;
 }
 
 /* Responsive Design */
@@ -74,9 +68,32 @@ main {
         height: auto;
         position: static;
         text-align: center;
+        padding: 0.5rem 1rem 1rem 1rem;
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
     }
 
     main {
         margin-left: 0;
     }
+}
+
+/* Form Styling */
+.sidebar form {
+    background-color: rgba(0,0,0,0.1);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.sidebar form .form-label {
+    color: var(--text-light);
+    margin-bottom: 0.5rem;
+}
+
+/* Utility Classes */
+.text-muted {
+    color: rgba(255,255,255,0.7);
 }
