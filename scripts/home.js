@@ -1,15 +1,6 @@
 $(document).ready(function () {
-    // Mobile menu toggle functionality
-    $('.mobile-menu-toggle').on('click', function () {
-        $('.sidebar, .mobile-sidebar-overlay').toggleClass('show');
-    });
-
-    $('.mobile-sidebar-overlay').on('click', function () {
-        $('.sidebar, .mobile-sidebar-overlay').removeClass('show');
-    });
-
     // Vote Form Submission
-    $('#voteForm').on('submit', function(e) {
+    $('#voteForm').on('submit', function (e) {
         e.preventDefault();
 
         const selectedCat = $('#catSelect').val();
