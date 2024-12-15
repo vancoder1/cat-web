@@ -56,4 +56,18 @@ main {
 /* FOOTER */
 .footer {
     height: 4rem;
+    text-align: center;
+}
+
+
+/* Mobile responsiveness */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%;
+        text-align: center;
+    }
+
+    main {
+        margin-left: 0px;
+    }
 }
