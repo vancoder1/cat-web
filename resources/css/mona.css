@@ -3,6 +3,11 @@
     overflow-x: hidden;
 }
 
+.sbcard {
+    background-color: #8b008b;
+    color: white;
+}
+
 .carousel-inner > .carousel-item > img {
     object-fit: contain;
     max-width: 100%;
