@@ -1,0 +1,17 @@
+.sidebar {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sbcard {
+    background-color: #8b008b;
+    color: white;
+}
+
+.carousel-inner > .carousel-item > img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 600px;
+    width: auto;
+    height: auto;
+}

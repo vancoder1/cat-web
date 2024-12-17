@@ -1,0 +1,30 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    scroll-margin-top: var(--header-footer-height);
+}
+
+/* List Group Items */
+.list-group-item {
+    transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: var(--hover-background) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list-group-item:active,
+.list-group-item.active {
+    background-color: var(--active-background) !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar-element-margin {
+    margin-top: 10px;
+}
