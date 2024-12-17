@@ -1,0 +1,34 @@
+.sidebar {
+    background-color: #8B0000 !important;
+}
+
+.card p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 15vh;
+    object-fit: cover;
+}
+
+/* Set width and height for item container */
+.carousel-item {
+    height: 60vh;
+}
+
+/* fit images fully within carousel items */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 767px) {
+    .sidebar>nav>ul>li>a {
+        color: white !important;
+    }
+    .sidebar>nav>ul>li>a:hover {
+        color: bisque !important;
+    }
+}
