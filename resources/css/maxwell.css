@@ -1,16 +1,6 @@
-body {
-    background-color: #F2E5BF;
-}
-
-/* HEADER */
-.header {
-    height: 4rem;
-}
-
 .sidebar {
-    background-color: #8B0000;
+    background-color: #8B0000 !important;
 }
-
 
 .card p {
     text-align: center;
@@ -23,16 +13,8 @@ body {
     object-fit: cover;
 }
 
-/* MAIN */
-main {
-    margin-top: 4rem;
-    margin-bottom: 4rem;
-    margin-left: 260px;
-}
-
 /* Set width and height for item container */
 .carousel-item {
-    width: 25vw;
     height: 60vh;
 }
 
@@ -42,32 +24,11 @@ main {
     height: 100%;
 }
 
-/* SIDEBAR */
-.sidebar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    padding: 4rem 0 4rem 0;
-    width: 260px;
-    z-index: 600;
-}
-
-/* FOOTER */
-.footer {
-    height: 4rem;
-    text-align: center;
-}
-
-
-/* Mobile responsiveness */
 @media (max-width: 767px) {
-    .sidebar {
-        width: 100%;
-        text-align: center;
+    .sidebar>nav>ul>li>a {
+        color: white !important;
     }
-
-    main {
-        margin-left: 0px;
+    .sidebar>nav>ul>li>a:hover {
+        color: bisque !important;
     }
 }
